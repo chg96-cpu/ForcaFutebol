@@ -19,13 +19,12 @@ int main() {
 	unsigned seed = time(0);
 	srand(seed);
 	int numero;
-    	numero=(rand() % 19) + 0;
+    	numero=(rand() % 25) + 0;
 	
-	
-    	char times[20][15] = {"palmeiras","fluminense","flamengo","corinthians","internacional","atletico-pr","atletico-mg","santos","america-mg","bragantino","goias","sao paulo","fortaleza","botafogo","ceara","cuiaba","avai","coritiba","atletico-go","juventude"};
+    	char times[26][15] = {"palmeiras","fluminense","flamengo","corinthians","internacional","atletico-pr","atletico-mg","santos","america-mg","bragantino","goias","sao paulo","fortaleza","botafogo","ceara","cuiaba","avai","coritiba","atletico-go","juventude","vasco","gremio","cruzeiro","chapecoense","barcelona","juventus"};
 	strcpy(timeFutebol, times[numero]);
 	
-	cout << "!Informacoes basicas dessa resenha!\n1-times como atletico-mg ou atletico-pr e esperado que vc bote o '-'como se fosse uma letra\n2-Bom dia!/Boa tarde!/Boa Noite!\nDigite 1 para comecar: ";
+	cout << "!Informacoes basicas dessa resenha!\n1-times como atletico-mg ou atletico-pr e esperado que vc bote o '-'como se fosse uma letra\n2-Bom dia!/Boa tarde!/Boa Noite!\nDigite 1 para comecar(se vc nao digitar exatamente 1,fudeu): ";
 	while(resenha!=1) {
 		cin >> resenha;
 		cout << "Digite 1 kaceta: ";
@@ -85,7 +84,7 @@ int main() {
 	if (acertos==tam) {
 		cout << "Voce venceu,cabeca de pika!"<< "\n";
 	}else {
-		cout << "Voce perdeu,lixo!"<< "\n";
+		cout << "Voce perdeu,lixo!" << "\n";
 	}
 	
 	system("pause");
