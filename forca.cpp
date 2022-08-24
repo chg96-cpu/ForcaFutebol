@@ -57,7 +57,7 @@ int main() {
 		}
 		cout << "\n";
 		cout << "erros: ";
-		for (i=0;i<6;i++) {
+		for (i=0;i<4;i++) {
 			cout << erros[i] << " ";
 		}
 		
