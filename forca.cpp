@@ -22,7 +22,7 @@ int main() {
     numero=(rand() % 15) + 1;
 	
 	
-    char times[20][15] = {"palmeiras","fluminense","flamengo","corinthias","internacional","atletico-pr","atletico-mg","santos","america-mg","bragantino","goias","sao paulo","fortaleza","botafogo","ceara","cuiaba","avai","coritiba","atletico-go","juventude"};
+    char times[20][15] = {"palmeiras","fluminense","flamengo","corinthians","internacional","atletico-pr","atletico-mg","santos","america-mg","bragantino","goias","sao paulo","fortaleza","botafogo","ceara","cuiaba","avai","coritiba","atletico-go","juventude"};
 	strcpy(timeFutebol, times[numero]);
 	
 	cout << "!Informacoes basicas dessa resenha!\n1-times como atletico-mg ou atletico-pr e esperado que vc bote o '-'como se fosse uma letra\n2-Bom dia!/Boa tarde!/Boa Noite!\nDigite 1 para comecar: ";
@@ -85,7 +85,7 @@ int main() {
 	if (acertos==tam) {
 		cout << "Voce venceu,cabeca de pika!"<< "\n";
 	}else {
-		cout << "Você perdeu,lixo!";
+		cout << "Voce perdeu,lixo!";
 	}
 	
 	system("pause");
