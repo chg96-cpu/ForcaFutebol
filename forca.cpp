@@ -19,7 +19,7 @@ int main() {
 	unsigned seed = time(0);
 	srand(seed);
 	int numero;
-    	numero=(rand() % 15) + 1;
+    	numero=(rand() % 19) + 0;
 	
 	
     	char times[20][15] = {"palmeiras","fluminense","flamengo","corinthians","internacional","atletico-pr","atletico-mg","santos","america-mg","bragantino","goias","sao paulo","fortaleza","botafogo","ceara","cuiaba","avai","coritiba","atletico-go","juventude"};
