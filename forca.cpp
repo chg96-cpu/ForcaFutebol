@@ -85,7 +85,7 @@ int main() {
 	if (acertos==tam) {
 		cout << "Voce venceu,cabeca de pika!"<< "\n";
 	}else {
-		cout << "Voce perdeu,lixo!";<< "\n";
+		cout << "Voce perdeu,lixo!"<< "\n";
 	}
 	
 	system("pause");
