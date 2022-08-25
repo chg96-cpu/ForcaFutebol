@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int brincadeira() {
+int forca() {
 	char timeFutebol[15],letra[1],secreto[30],erros[30];
 	int tam,i,chances,acertos,contagemErro;
 	bool acerto;
@@ -18,9 +18,9 @@ int brincadeira() {
 	unsigned seed = time(0);
 	srand(seed);
 	int numero;
-    numero=(rand() % 19) + 0;
+    	numero=(rand() % 19) + 0;
 	
-    char times[20][15] = {"palmeiras","fluminense","flamengo","corinthians","internacional","atletico-pr","atletico-mg","santos","america-mg","bragantino","goias","sao paulo","fortaleza","botafogo","ceara","cuiaba","avai","coritiba","atletico-go","juventude"};
+	char times[20][15] = {"palmeiras","fluminense","flamengo","corinthians","internacional","atletico-pr","atletico-mg","santos","america-mg","bragantino","goias","sao paulo","fortaleza","botafogo","ceara","cuiaba","avai","coritiba","atletico-go","juventude"};
 	strcpy(timeFutebol, times[numero]);
 	cout << "!Informacoes basicas dessa resenha!\n1-times como atletico-mg ou atletico-pr e esperado que vc bote o '-'como se fosse uma letra\n2-Bom dia!/Boa tarde!/Boa Noite!";
 	while (resenha !=20) {
@@ -91,7 +91,7 @@ int brincadeira() {
 int main() {
 	int reinicia;
 	do {
-		brincadeira();
+		forca();
 		cout << "Se quiser jogar de novo digite 1,se nao, digite qualquer outro numero para encerrar: ";
 		cin >> reinicia;
 		system("cls");
