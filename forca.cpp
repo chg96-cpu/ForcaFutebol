@@ -18,9 +18,9 @@ int brincadeira() {
 	unsigned seed = time(0);
 	srand(seed);
 	int numero;
-    	numero=(rand() % 22) + 0;
+    numero=(rand() % 19) + 0;
 	
-    	char times[23][15] = {"palmeiras","fluminense","flamengo","corinthians","internacional","atletico-pr","atletico-mg","santos","america-mg","bragantino","goias","sao paulo","fortaleza","botafogo","ceara","cuiaba","avai","coritiba","atletico-go","juventude","vasco","gremio","cruzeiro"};
+    char times[20][15] = {"palmeiras","fluminense","flamengo","corinthians","internacional","atletico-pr","atletico-mg","santos","america-mg","bragantino","goias","sao paulo","fortaleza","botafogo","ceara","cuiaba","avai","coritiba","atletico-go","juventude"};
 	strcpy(timeFutebol, times[numero]);
 	cout << "!Informacoes basicas dessa resenha!\n1-times como atletico-mg ou atletico-pr e esperado que vc bote o '-'como se fosse uma letra\n2-Bom dia!/Boa tarde!/Boa Noite!";
 	while (resenha !=20) {
@@ -92,7 +92,7 @@ int main() {
 	int reinicia;
 	do {
 		brincadeira();
-		cout << "Se quiser jogar de novo digite 1: ";
+		cout << "Se quiser jogar de novo digite 1,se nao, digite qualquer outro numero para encerrar: ";
 		cin >> reinicia;
 		system("cls");
 	} while(reinicia == 1);
