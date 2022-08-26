@@ -24,7 +24,7 @@ int forca() {
 	strcpy(timeFutebol, times[numero]);
 	cout << "!Informacoes basicas dessa resenha!\n1-times como atletico-mg ou atletico-pr e esperado que vc bote o '-'como se fosse uma letra\n2-Bom dia!/Boa tarde!/Boa Noite!";
 	while (resenha !=20) {
-		cout <<"\nDigite 20 para comecar(se vc nao digitar exatamente 20,fudeu): ";
+		cout <<"\nDigite 20 para comecar: ";
 		cin >> resenha;
 	}
 	
