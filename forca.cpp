@@ -6,7 +6,7 @@
 using namespace std;
 
 int forca() {
-	char timeFutebol[15],letra[1],secreto[30],erros[30];
+	char timeFutebol[0],letra[1],secreto[30],erros[30];
 	int tam,i,chances,acertos,contagemErro;
 	bool acerto;
 	int resenha;
@@ -44,7 +44,7 @@ int forca() {
 	
 	
 	
-	while((chances>0) && (acertos<tam) && (contagemErro<6)) {
+	while((chances>0) && (acertos<tam) && (contagemErro<4)) {
 		cout << "Chances restantes:" << chances << "\n\n";
 		cout << "Time secreto: ";
 		
@@ -79,10 +79,10 @@ int forca() {
 	}
 	
 	if (acertos==tam) {
-		cout << "Voce venceu,cabeca de pika!"<< "\n";
+		cout << "Voce venceu!"<< "\n";
 		
 	}else {
-		cout << "Voce perdeu,lixo!" << "\n";
+		cout << "Voce perdeu!" << "\n";
 		
 	}
 	
